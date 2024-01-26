@@ -1,4 +1,4 @@
-## MERN Stack CRUD : Employee Database
+CRUD : Employee Database
 **MERN App URL :**\
 https://mern-stack-crud-m2qd.onrender.com/
 
