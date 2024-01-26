@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className="navbar navbar-light text-black my-2" style={{paddingLeft: '1rem', paddingRight: '1rem'}} >
         <button type="button" class="btn btn-secondary text-center m-auto" style={{width: '100%'}}>
           <NavLink className="nav-link enable-button-pointers mx-auto" to="/create">
-            Create Record
+          Create Record
           </NavLink>
         </button>
       </nav>
