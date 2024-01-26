@@ -2,14 +2,17 @@
 **MERN App URL :**\
 https://mern-stack-crud-m2qd.onrender.com/
 
-**Web Development:**\
-`HTML` `CSS` `JavaScript` `React.js` `TypeScript`
+**Frontend Development:**\
+`React.js` `JavaScript` `HTML` `CSS`
+
+**Backend Development:**\
+`Node.js` `Express.js` `REST API`
+
+**Database Management:**\
+`MongoDB`
   
 **Styling:**\
-`Tailwind CSS`
+`Bootstrap`
   
-**UI Component Library:**\
-`Daisy UI`
-  
-**Build and Deployment:**\
-`Vite` `Netlify (for deployment)`
+**Deployment:**\
+`Render`
