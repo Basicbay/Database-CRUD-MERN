@@ -1,4 +1,4 @@
-## Employee Database App
+## Employee Database App 🗃️
 
 **URL:**\
 https://mern-stack-crud-m2qd.onrender.com/
