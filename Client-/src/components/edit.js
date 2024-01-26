@@ -14,7 +14,7 @@ export default function Edit() {
   useEffect(() => {
     async function fetchData() {
       const id = params.id.toString();
-      const response = await fetch(`http://localhost:5000/record/${params.id.toString()}`);
+      const response = await fetch(`https://mern-stack-crud-server.onrender.com/record/${params.id.toString()}`);
       if (!response.ok) {
         const message = `An error has occurred: ${response.statusText}`;
         window.alert(message);
@@ -45,7 +45,7 @@ export default function Edit() {
       level: form.level,
     };
     // This will send a post request to update the data in the database.
-    await fetch(`http://localhost:5000/update/${params.id}`, {
+    await fetch(`https://mern-stack-crud-server.onrender.com/update/${params.id}`, {
       method: "POST",
       body: JSON.stringify(editedPerson),
       headers: {

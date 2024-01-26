@@ -24,7 +24,7 @@ export default function RecordList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`http://localhost:5000/record/`);
+      const response = await fetch(`https://mern-stack-crud-server.onrender.com/record/`);
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         window.alert(message);
@@ -38,7 +38,7 @@ export default function RecordList() {
   }, [records.length]);
   // This method will delete a record
   async function deleteRecord(id) {
-    await fetch(`http://localhost:5000/${id}`, {
+    await fetch(`https://mern-stack-crud-server.onrender.com/${id}`, {
       method: "DELETE"
     });
     const newRecords = records.filter((el) => el._id !== id);
