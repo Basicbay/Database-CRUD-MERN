@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div>
 
-      <div className="text-center bg-success text-white pt-3 pb-1">
+      <div className="text-center text-white pt-3 pb-1" style={{background:'#4D4DC4 '}}>
         <h3 className="fw-bold">MERN Stack</h3>
         <p>Employee Database</p>
       </div>
