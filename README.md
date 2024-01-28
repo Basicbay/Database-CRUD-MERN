@@ -4,7 +4,7 @@
 https://mern-stack-crud-m2qd.onrender.com/
 
 **Frontend Development:**\
-`React.js` `JavaScript` `HTML` `CSS`
+`React` `JavaScript` `HTML` `CSS`
 
 **Backend Development:**\
 `Node.js` `Express.js` `REST API`
@@ -17,3 +17,6 @@ https://mern-stack-crud-m2qd.onrender.com/
   
 **Deployment:**\
 `Render`
+
+![image mern stack](https://github.com/Basicbay/MERN-Stack-CRUD/assets/151770227/374dd1ab-04e0-498e-968e-731df3775976)
+
