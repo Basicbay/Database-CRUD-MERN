@@ -7,14 +7,10 @@ const Record = (props) => (
     <td>{props.record.position}</td>
     <td>{props.record.level}</td>
     <td>
-
-
       <div class="btn-group d-flex flex-wrap" role="group" aria-label="Basic mixed styles example">
-      <Link type="button" class="btn btn-outline-secondary" to={`/edit/${props.record._id}`}>Edit</Link>
-      <button type="button" class="btn btn-outline-danger" onClick={() => {props.deleteRecord(props.record._id);}}>Delete</button>
-
+        <Link type="button" class="btn btn-outline-secondary" to={`/edit/${props.record._id}`}>Edit</Link>
+        <button type="button" class="btn btn-outline-danger" onClick={() => { props.deleteRecord(props.record._id); }}>Delete</button>
       </div>
-
     </td>
   </tr>
 );
@@ -36,6 +32,7 @@ export default function RecordList() {
     getRecords();
     return;
   }, [records.length]);
+
   // This method will delete a record
   async function deleteRecord(id) {
     await fetch(`https://mern-stack-crud-server.onrender.com/${id}`, {
@@ -44,6 +41,7 @@ export default function RecordList() {
     const newRecords = records.filter((el) => el._id !== id);
     setRecords(newRecords);
   }
+
   // This method will map out the records on the table
   function recordList() {
     return records.map((record) => {
@@ -56,6 +54,7 @@ export default function RecordList() {
       );
     });
   }
+
   // This following section will display the table with the records of individuals.
   return (
     <div style={{ paddingLeft: '1rem', paddingRight: '1rem' }} >
