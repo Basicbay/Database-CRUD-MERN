@@ -17,6 +17,9 @@ const Record = (props) => (
 
 export default function RecordList() {
   const [records, setRecords] = useState([]);
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
@@ -28,6 +31,7 @@ export default function RecordList() {
       }
       const records = await response.json();
       setRecords(records);
+      setIsLoaded(true);
     }
     getRecords();
     return;
@@ -55,6 +59,10 @@ export default function RecordList() {
     });
   }
 
+  if (!isLoaded) {
+    return <div className="d-flex justify-content-center" style={{ marginTop: 100 }}>Loading...</div>;
+  } else {
+
   // This following section will display the table with the records of individuals.
   return (
     <div style={{ paddingLeft: '1rem', paddingRight: '1rem' }} >
@@ -73,4 +81,5 @@ export default function RecordList() {
       </table>
     </div>
   );
+}
 }
