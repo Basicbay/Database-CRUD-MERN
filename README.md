@@ -17,5 +17,6 @@
 **Deployment:**\
 `Render`
 
-![image mern stack](https://github.com/Basicbay/MERN-Stack-CRUD/assets/151770227/374dd1ab-04e0-498e-968e-731df3775976)
+![image mern stack 2](https://github.com/Basicbay/EmployeeDB-MERN/assets/151770227/daa1554f-3d82-478b-a9d4-27034c21dce7)
+
 
