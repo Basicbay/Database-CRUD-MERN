@@ -1,7 +1,6 @@
 ## Employee Database App 🗃️
 
-**URL:**\
-https://mern-stack-crud-m2qd.onrender.com/
+**URL:** https://mern-stack-crud-m2qd.onrender.com/
 
 **Frontend Development:**\
 `React` `JavaScript` `HTML` `CSS`
