@@ -1,22 +1,43 @@
-## Employee Database App 🗃️
-
+# Employee Database 🗄
 **URL:** https://mern-stack-crud-m2qd.onrender.com/
 
-**Frontend Development:**\
-`React` `JavaScript` `HTML` `CSS`
+## Tech stack
 
-**Backend Development:**\
-`Node.js` `Express.js` `REST API`
+Client
 
-**Database Management:**\
-`MongoDB`
-  
-**Styling:**\
-`Bootstrap`
-  
-**Deployment:**\
-`Render`
+`Vite` `HTML` `CSS` `JavaScript` `React` `Bootstrap`
 
-![image mern stack 2](https://github.com/Basicbay/EmployeeDB-MERN/assets/151770227/daa1554f-3d82-478b-a9d4-27034c21dce7)
+Server
+
+ `Node JS` `Mongo DB` `Express` `REST API`
+
+## Installation
+```console
+git clone https://github.com/Basicbay/employee-database.git
+```
+
+Client
+
+```console
+cd client-
+```
+```console
+npm install
+```
+```console
+npm run dev
+```
+
+Server
+
+```console
+cd server
+```
+```console
+npm install
+```
+```console
+npm start
+```
 
 
