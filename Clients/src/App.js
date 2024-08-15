@@ -10,14 +10,15 @@ import './App.css'
 
  const App = () => {
  return (
-   <div>
-
+   <div >
      <Navbar />
-     <Routes>
+     <div className="mx-auto" style={{width: '100%', maxWidth: '1280px'}}>
+     <Routes >
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
      </Routes>
+     </div>
    </div>
  );
 };

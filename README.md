@@ -5,7 +5,7 @@
 
 Client
 
-`Vite` `HTML` `CSS` `JavaScript` `React` `Bootstrap`
+`HTML` `CSS` `JavaScript` `React` `Bootstrap`
 
 Server
 
@@ -25,7 +25,7 @@ cd client-
 npm install
 ```
 ```console
-npm run dev
+npm start
 ```
 
 Server
