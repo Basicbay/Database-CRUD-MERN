@@ -7,9 +7,27 @@ const Record = (props) => (
     <td>{props.record.position}</td>
     <td>{props.record.level}</td>
     <td>
-      <div class="btn-group d-flex flex-wrap" role="group" aria-label="Basic mixed styles example">
-        <Link type="button" class="btn btn-outline-secondary" to={`/edit/${props.record._id}`}>Edit</Link>
-        <button type="button" class="btn btn-outline-danger" onClick={() => { props.deleteRecord(props.record._id); }}>Delete</button>
+      <div
+        class="btn-group d-flex flex-wrap"
+        role="group"
+        aria-label="Basic mixed styles example"
+      >
+        <Link
+          type="button"
+          class="btn btn-outline-secondary"
+          to={`/edit/${props.record._id}`}
+        >
+          Edit
+        </Link>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          onClick={() => {
+            props.deleteRecord(props.record._id);
+          }}
+        >
+          Delete
+        </button>
       </div>
     </td>
   </tr>
@@ -23,7 +41,9 @@ export default function RecordList() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`https://mern-stack-crud-server.onrender.com/record/`);
+      const response = await fetch(
+        `https://mern-stack-crud-server.onrender.com/record/`
+      );
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         window.alert(message);
@@ -40,7 +60,7 @@ export default function RecordList() {
   // This method will delete a record
   async function deleteRecord(id) {
     await fetch(`https://mern-stack-crud-server.onrender.com/${id}`, {
-      method: "DELETE"
+      method: "DELETE",
     });
     const newRecords = records.filter((el) => el._id !== id);
     setRecords(newRecords);
@@ -60,26 +80,35 @@ export default function RecordList() {
   }
 
   if (!isLoaded) {
-    return <div className="d-flex justify-content-center" style={{ marginTop: 100 }}>Loading...</div>;
+    return (
+      <div
+        class="d-flex justify-content-center align-items-center mt-100"
+        style={{ marginTop: 200 }}
+      >
+        <div class="text-center">
+          <div class="spinner-border m-3" role="status"></div>
+          <br />
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    );
   } else {
-
-  // This following section will display the table with the records of individuals.
-  return (
-    <div style={{ paddingLeft: '1rem', paddingRight: '1rem' }} >
-
-      <h3>Record List</h3>
-      <table className="table table-striped" style={{ marginTop: 20 }}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Level</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>{recordList()}</tbody>
-      </table>
-    </div>
-  );
-}
+    // This following section will display the table with the records of individuals.
+    return (
+      <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
+        <h3>Record List</h3>
+        <table className="table table-striped" style={{ marginTop: 20 }}>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Level</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>{recordList()}</tbody>
+        </table>
+      </div>
+    );
+  }
 }
